@@ -6,12 +6,12 @@ const VideoListItem = ({video, onVideoSelect}) => {
   
   return (
     <li className="video-list-item" onClick={e => onVideoSelect(video)}>
-      <div className="video-thumbnail">
-        <img src={imageUrl} />
-      </div>
-      <div className="video-description">
-        {video.snippet.title}
-      </div>
+        <div className="video-thumbnail">
+          <img src={imageUrl} />
+        </div>
+        <div className="video-description">
+          {video.snippet.title}
+        </div>
     </li>
   )
 }
